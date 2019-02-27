@@ -1,0 +1,11 @@
+
+vector1 = (3, 7)
+vector2 = (5, 9)
+def scalar_prod(data):
+    res = 0
+    for i, j in data:
+        res += (i*i) + (j*j)
+    return res
+
+
+print("Scalar product of vectors is %s" % scalar_prod(list_of_vectors))
