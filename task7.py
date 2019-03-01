@@ -1,9 +1,9 @@
-n = 3
-m = 5
+n = 2
+m = 80
 
 def check(n):
     number = 0
-    if len(str(n)) == len(str(m)):
+    if len(str(n)) <= len(str(m)):
         number += round((((10**n)-1) - 10**(n-1)) / m)
         return number
     else:
