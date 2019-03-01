@@ -6,4 +6,4 @@ def vector_length(data):
     return res
 
 
-print("Длина вектора составляет % s" % vector_length(vector))
+print("Длина вектора составляет % s" % vector_length(vector)) 
