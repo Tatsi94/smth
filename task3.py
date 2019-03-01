@@ -1,7 +1,5 @@
 vector = [2, 5, 8]
 
-def vector_length(data):
-    res = (sum(i**2 for i in vector)**0.5)
-    return res
+vector_length = (sum(i**2 for i in vector)**0.5)
 
-print("Длина вектора составляет % s" % vector_length(vector))
+print("Длина вектора составляет % s" % vector_length)
