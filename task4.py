@@ -2,29 +2,17 @@ n = 10
 m = 2
 s = 6
 
-k = (n - m)
+k = n - m
 
-def fact(n):
-    result = 1
-    for i in range(2, n + 1):
-        result *= i
-    return result
 
-def fact(m):
-    result = 1
-    for i in range(2, m + 1):
-        result *= i
-    return result
-
-def fact(k):
-    result = 1
-    for i in range(2, k + 1):
-        result *= i
-    return result
-
+def factorial(data):
+    if data == 0:
+        return 1
+    else:
+        return data * factorial(data - 1)
 
 def probability(data):
-    res = (fact(n) / (fact(m) * fact(k))) * (((7 - s) / 6)**m) * (1 - ((7 - s) / 6))**k
+    res = (factorial(n) / (factorial(m) * factorial(k))) * (((7 - s) / 6)**m) * (1 - ((7 - s) / 6))**k
     return res
 
-print("Вероятность составляет % s" % probability(fact))
+print("Вероятность составляет % s" % probability(factorial))
