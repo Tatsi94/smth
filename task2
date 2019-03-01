@@ -1,5 +1,5 @@
 
-vector1 = (3, 7)
+vector1 = (3, 7) 
 vector2 = (5, 9)
 def scalar_prod(data):
     res = 0
@@ -9,3 +9,5 @@ def scalar_prod(data):
 
 
 print("Scalar product of vectors is %s" % scalar_prod(list_of_vectors))
+
+zip(vector1,vector2)
