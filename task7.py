@@ -1,13 +1,8 @@
-n = 2
-m = 80
-
-def check(n):
-    number = 0
-    if len(str(n)) <= len(str(m)):
-        number += round((((10**n)-1) - 10**(n-1)) / m)
-        return number
-    else:
-        print("zero")
+n = 1  # количество знаков
+m = 9  # делитель
 
 
-print("Количество %s" % n, "-значных чисел, делящихся на %s" % m,", составляет % s" % check(n))
+number = round((((10**n)-1) - 10**(n-1)) / m)
+
+
+print("Количество %s" % n, "-значных чисел, делящихся на %s" % m, ", составляет % s" % number)
