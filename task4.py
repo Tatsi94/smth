@@ -7,7 +7,7 @@ k = n - m
 
 def factorial(data):
     res = 1
-    for data in range(1, data-1):
+    for data in range(1, data + 1):
         res = data * (factorial(data - 1))
     return res
 
